@@ -1,5 +1,8 @@
 # GoToWebinar PHP wrapper
 
+## Installation
+`composer require paravibe/gotowebinar`
+
 ## How to use
 
 ### Initialize client
