@@ -1,0 +1,22 @@
+{
+  "name": "paravibe/GoToWebinar",
+  "version": "1.0",
+  "description": "The GoToWebinar API wrapper for PHP",
+  "license": "MIT",
+  "keywords": ["LogMeIn", "LogMeIn API", "GoToWebinar API", "GoToWebinar"],
+  "authors": [
+    {
+      "name": "Max Petyurenko",
+      "email": "max@eurekos.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "guzzlehttp/guzzle": "6.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LogMeIn\\GoToWebinar\\": "src/GoToWebinar"
+    }
+  }
+}
