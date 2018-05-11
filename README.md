@@ -1,5 +1,9 @@
 # GoToWebinar PHP wrapper
 
+[![Latest Version](https://img.shields.io/github/release/paravibe/gotowebinar.svg?style=flat-square)](https://github.com/paravibe/gotowebinar/releases)
+[![Build Status](https://img.shields.io/travis/paravibe/gotowebinar.svg?style=flat-square)](https://travis-ci.org/paravibe/gotowebinar)
+[![Total Downloads](https://img.shields.io/packagist/dt/paravibe/gotowebinar.svg?style=flat-square)](https://packagist.org/packages/paravibe/gotowebinar)
+
 ## Installation
 `composer require paravibe/gotowebinar`
 
