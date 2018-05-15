@@ -10,7 +10,16 @@
 ## How to use
 
 ### Initialize client
-`$client = new \LogMeIn\GoToWebinar\Client($access_token);`
+`$client = new \LogMeIn\GoToWebinar\Client($access_token, $values);`
+
+Where `$access_token` is a token retrived during authorization procedure - https://goto-developer.logmeininc.com/how-get-access-token-and-organizer-key  
+and `$values` are response data that contain:
+* account_key
+* account_type
+* email
+* firstName
+* lastName
+* organizer_key
 
 Use any method described here https://goto-developer.logmeininc.com/content/gotowebinar-api-reference-v2
 by passing proper HTTP method and endpoint to `createRequest()` method.
