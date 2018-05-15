@@ -57,6 +57,9 @@ class GoToWebinarRequest {
     }
     catch (\Exception $e) {
       $result = $e->getResponse();
+      $error = new GoToWebinarResponse($result);
+
+      throw new GoToWebinarException($error->getBody(), $error->getHttpStatusCode());
     }
 
     return new GoToWebinarResponse($result);
