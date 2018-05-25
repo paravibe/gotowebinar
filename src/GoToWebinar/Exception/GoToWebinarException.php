@@ -13,17 +13,17 @@ class GoToWebinarException extends \Exception {
    * Construct the exception handler.
    */
   public function __construct($message, $code = 0, $previous = NULL) {
-    if ($json_data = json_decode($message, TRUE)) {
-      $message = $this->formatJsonError($json_data);
-    }
-
     parent::__construct($message, $code, $previous);
   }
 
   /**
-   * Stringify the returned error and message.e
+   * Stringify the returned error and message.
    */
   public function __toString() {
+    if ($json_data = json_decode($this->message, TRUE)) {
+      $this->message = $this->formatJsonError($json_data);
+    }
+
     return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
   }
 
