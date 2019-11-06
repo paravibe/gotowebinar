@@ -1,13 +1,13 @@
 {
   "name": "paravibe/gotowebinar",
-  "version": "1.0",
+  "version": "1.2",
   "description": "The GoToWebinar API wrapper for PHP",
   "license": "MIT",
   "keywords": ["LogMeIn", "LogMeIn API", "GoToWebinar API", "GoToWebinar"],
   "authors": [
     {
       "name": "Max Petyurenko",
-      "email": "max@eurekos.com"
+      "email": "paravibe@gmail.com"
     }
   ],
   "require": {
