@@ -1,9 +1,5 @@
 <?php
 
-/**
- * @file
- */
-
 namespace LogMeIn\GoToWebinar\Core;
 
 class GoToWebinarConstants {
@@ -14,4 +10,5 @@ class GoToWebinarConstants {
 
   // Errors.
   const ERROR_ACCESS_TOKEN = 'No access token has been provided.';
+
 }

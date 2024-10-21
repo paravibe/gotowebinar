@@ -1,14 +1,10 @@
 <?php
 
-/**
- * @file
- */
-
 namespace LogMeIn\GoToWebinar\Http;
 
 use GuzzleHttp\Client as HttpClient;
-use LogMeIn\GoToWebinar\Exception\GoToWebinarException;
 use LogMeIn\GoToWebinar\Core\GoToWebinarConstants;
+use LogMeIn\GoToWebinar\Exception\GoToWebinarException;
 
 class GoToWebinarRequest {
 
@@ -22,6 +18,7 @@ class GoToWebinarRequest {
   protected $returnsStream;
   protected $sink;
   protected $urlQuery;
+  protected $headers;
 
   public function __construct($requestType, $endpoint, $accessToken, $baseUrl, $apiPrefix) {
     $this->requestType = $requestType;
@@ -155,14 +152,14 @@ class GoToWebinarRequest {
     $headers = [
       'Accept' => 'application/json',
       'Content-Type' => 'application/json',
-      'Authorization' => 'Bearer ' . $this->accessToken
+      'Authorization' => 'Bearer ' . $this->accessToken,
     ];
 
     return $headers;
   }
 
   private function buildUrlQuery(array $query, $parent = '') {
-    $params = array();
+    $params = [];
 
     foreach ($query as $key => $value) {
       $key = $parent ? $parent . rawurlencode('[' . $key . ']') : rawurlencode($key);

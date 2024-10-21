@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Exceptions for GoToWebinar.
- */
-
 namespace LogMeIn\GoToWebinar\Exception;
 
 class GoToWebinarException extends \Exception {
@@ -37,7 +32,7 @@ class GoToWebinarException extends \Exception {
    *   Formatted message.
    */
   private function formatJsonError($data) {
-    $output = '';
+    $output = [];
 
     foreach ($data as $key => $value) {
       if (is_array($value)) {
@@ -49,4 +44,5 @@ class GoToWebinarException extends \Exception {
 
     return implode('; ', $output);
   }
+
 }

@@ -1,9 +1,5 @@
 <?php
 
-/**
- * @file
- */
-
 namespace LogMeIn\GoToWebinar\Http;
 
 class GoToWebinarResponse {
@@ -52,7 +48,7 @@ class GoToWebinarResponse {
     $decodedBody = json_decode($this->body, TRUE);
 
     if ($decodedBody === NULL) {
-      $decodedBody = array();
+      $decodedBody = [];
     }
 
     return $decodedBody;
