@@ -22,7 +22,7 @@ class Client {
     $this->values = [
       'accountKey' => $values['account_key'] ?? NULL,
       'accountType' => $values['account_type'] ?? NULL,
-      'email' => $values['email'] ?? NULL,
+      'principal' => $values['principal'] ?? NULL,
       'firstName' => $values['firstName'] ?? NULL,
       'lastName' => $values['lastName'] ?? NULL,
       'organizerKey' => $values['organizer_key'] ?? NULL,
