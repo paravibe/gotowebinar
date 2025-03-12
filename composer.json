@@ -1,6 +1,6 @@
 {
   "name": "paravibe/gotowebinar",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "The GoToWebinar API wrapper for PHP",
   "license": "MIT",
   "keywords": ["LogMeIn", "LogMeIn API", "GoToWebinar API", "GoToWebinar"],
