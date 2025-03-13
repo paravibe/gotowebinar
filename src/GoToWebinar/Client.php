@@ -13,9 +13,9 @@ class Client {
   protected $apiPrefix;
   protected $accessToken;
 
-  public function __construct($token, $values = []) {
+  public function __construct($token, $values = [], $apiPrefix = GoToWebinarConstants::REST_API_PREFIX) {
     $this->baseUrl = GoToWebinarConstants::REST_API_ENDPOINT;
-    $this->apiPrefix = GoToWebinarConstants::REST_API_PREFIX;
+    $this->apiPrefix = $apiPrefix;
     $this->accessToken = $token;
 
     // Set additional values received after token request.

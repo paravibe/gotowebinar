@@ -136,7 +136,8 @@ class GoToWebinarRequest {
    *   Request URL.
    */
   private function getRequestUrl() {
-    $url = $this->apiPrefix . '/' . $this->endpoint;
+    $url = !empty($this->apiPrefix) ? $this->apiPrefix . '/' : '';
+    $url .= $this->endpoint;
 
     if (!empty($this->urlQuery)) {
       $url .= '?' . $this->urlQuery;
